@@ -1,0 +1,2 @@
+npm install
+node lighthouse-tests.js
