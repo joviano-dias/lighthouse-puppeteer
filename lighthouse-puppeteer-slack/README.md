@@ -16,8 +16,8 @@ Install node via `brew install node`
 `./build`
 
 ### Output
-* [HTML Report](lighthouse-puppeteer/report.html) sample, download and view!
-* [JSON Report](lighthouse-puppeteer/report.json) sample, which can be viewed via [Lighthouse report viewer](https://googlechrome.github.io/lighthouse/viewer/)
+[HTML Report](./report.html) sample
+[JSON Report](./report.json) sample, which can be viewed via [Lighthouse report viewer](https://googlechrome.github.io/lighthouse/viewer/)
 
 ### Notes
 * Runs only Desktop compatibility tests, to run mobile pass in a different `config` to lighthouse 
