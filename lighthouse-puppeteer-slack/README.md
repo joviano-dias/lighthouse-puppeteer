@@ -1,7 +1,12 @@
 #  Puppeteer and  Lighthouse
-Using Google Puppeteer to run Google Lighthouse programmatically within a CI-CD environment and generate reports to measure performance accessibility and security on the fly.
+This is a more advanced implementation
+- Does multiple URL tests
+- Checks relevant scores
+- Compares with Baseline and Errors if below baseline
+- Sends out a slack alert too if it is below the baseline
 
 ![Report sample against nature.com](lighthouse-puppeteer.png)
+![Slack alerts](slack_alerts_lighthouse.png)
 
 ### What is Lighthouse?
 [Google Lighthouse](https://developers.google.com/web/tools/lighthouse/) is an open-source, automated tool for improving the quality of web pages. You can run it against any web page, public or requiring authentication. It has audits for performance, accessibility, progressive web apps, and more.
@@ -16,8 +21,8 @@ Install node via `brew install node`
 `./build`
 
 ### Output
-[HTML Report](./report.html) sample
-[JSON Report](./report.json) sample, which can be viewed via [Lighthouse report viewer](https://googlechrome.github.io/lighthouse/viewer/)
+[HTML Report](report.html) sample
+[JSON Report](report.json) sample, which can be viewed via [Lighthouse report viewer](https://googlechrome.github.io/lighthouse/viewer/)
 
 ### Notes
 * Runs only Desktop compatibility tests, to run mobile pass in a different `config` to lighthouse 

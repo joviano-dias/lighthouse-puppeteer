@@ -3,6 +3,10 @@ Using Google Puppeteer to run Google Lighthouse programmatically within a CI-CD 
 
 ![Report sample against nature.com](lighthouse-puppeteer.png)
 
+### Two projects
+[Google Lighthouse](./lighthouse-puppeteer)
+[Google Lighthouse](./lighthouse-puppeteer-slack)
+
 ### What is Lighthouse?
 [Google Lighthouse](https://developers.google.com/web/tools/lighthouse/) is an open-source, automated tool for improving the quality of web pages. You can run it against any web page, public or requiring authentication. It has audits for performance, accessibility, progressive web apps, and more.
 
@@ -15,9 +19,6 @@ Install node via `brew install node`
 ### Run
 `./build`
 
-### Output
-* [HTML Report](lighthouse-puppeteer/report.html) sample, download and view!
-* [JSON Report](lighthouse-puppeteer/report.json) sample, which can be viewed via [Lighthouse report viewer](https://googlechrome.github.io/lighthouse/viewer/)
 
 ### Notes
 * Runs only Desktop compatibility tests, to run mobile pass in a different `config` to lighthouse 
@@ -27,6 +28,3 @@ const report = await lighthouse(page.url(), opts, config).then(results => {
 });
 ```
 * Can be run against different configs by referencing up https://github.com/GoogleChrome/lighthouse/blob/master/docs/configuration.md#more-examples
-
-### To do
-* Need to add slack alerts, referencial comparison against previous runs or maybe .. agianst pre-defined thresholds. _(E.g. alert if scores fall below 80)_/
