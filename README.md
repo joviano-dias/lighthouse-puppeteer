@@ -4,8 +4,15 @@ Using Google Puppeteer to run Google Lighthouse programmatically within a CI-CD 
 ![Report sample against nature.com](lighthouse-puppeteer.png)
 
 ### Two projects
-[Google Lighthouse](./lighthouse-puppeteer)
-[Google Lighthouse](./lighthouse-puppeteer-slack)
+>- [Google Lighthouse Puppeteer](./lighthouse-puppeteer)
+> A simple implementation
+
+- [Google Lighthouse Puppeteer multi-page with score analysis and slack alerts](./lighthouse-puppeteer-slack)
+Does multi-page lighthouse puppeteer scans with lighthouse score analysis, and slack alerts
+
+
+
+
 
 ### What is Lighthouse?
 [Google Lighthouse](https://developers.google.com/web/tools/lighthouse/) is an open-source, automated tool for improving the quality of web pages. You can run it against any web page, public or requiring authentication. It has audits for performance, accessibility, progressive web apps, and more.

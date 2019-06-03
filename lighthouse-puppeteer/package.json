@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "lighthouse": "^4.2.0"
+    "lighthouse": "^5.1.0"
   },
   "dependencies": {
     "fs": "0.0.1-security",
